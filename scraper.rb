@@ -20,28 +20,36 @@ class ListPage < WikipediaOfficeholderPage
   decorator UnspanAllTables
 
   def wanted_tables
-    tables_with_header('coalition').first
+    tables_with_header('office').first
   end
 end
 
 # Each officeholder in the list
 class HolderItem < WikipediaOfficeholderRow
   def columns
-    %w[_ordinal _photo name start_date end_date _duration _color _party _election _coalition cabinet]
+    %w[ordinal dates name _party _notes]
   end
 
   def start_date_str
-    start_date_cell.text.tidy
+    dates.first
   end
 
   def end_date_str
-    return if end_date_cell.text.include? 'Incumbent'
+    return if dates.last.include? 'present'
 
-    end_date_cell.text.tidy
+    dates.last
+  end
+
+  def dates
+    cell_for('dates').text.tidy.split(/\s*–\s*/)
   end
 
   def dateclass
     Date::Partial
+  end
+
+  def empty?
+    cell_for('ordinal').text.tidy.to_i < 32
   end
 end
 

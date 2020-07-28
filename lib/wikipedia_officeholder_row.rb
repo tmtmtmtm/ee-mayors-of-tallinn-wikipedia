@@ -31,11 +31,11 @@ class WikipediaOfficeholderRow < WikipediaTableRow
   end
 
   field :cabinet do
-    wikidata_ids_in(cabinet_cell).first
+    wikidata_ids_in(cabinet_cell).first if cabinet_cell
   end
 
   field :cabinetLabel do
-    link_titles_in(cabinet_cell).first
+    link_titles_in(cabinet_cell).first if cabinet_cell
   end
 
   def empty?
@@ -45,18 +45,23 @@ class WikipediaOfficeholderRow < WikipediaTableRow
   private
 
   def name_cell
-    tds[columns.index('name')]
+    cell_for('name')
   end
 
   def cabinet_cell
-    tds[columns.index('cabinet')]
+    cell_for('cabinet')
   end
 
   def start_date_cell
-    tds[columns.index('start_date')]
+    cell_for('start_date')
   end
 
   def end_date_cell
-    tds[columns.index('end_date')]
+    cell_for('end_date')
+  end
+
+  def cell_for(str)
+    ifx = columns.index(str) or return
+    tds[ifx]
   end
 end
