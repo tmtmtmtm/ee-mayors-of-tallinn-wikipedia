@@ -31,6 +31,11 @@ class HolderItem < WikipediaOfficeholderRow
   end
 
   def start_date_str
+    # handle formats like "March - Sepember 2013"
+    unless dates.first.chars.last[/[0-9]/]
+      return [dates.first, end_date.split('-').first].join(' ')
+    end
+
     dates.first
   end
 
