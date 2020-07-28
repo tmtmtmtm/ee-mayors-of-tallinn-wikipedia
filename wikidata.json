@@ -56,11 +56,11 @@
     },
     "start": {
       "value": "1990-01-01T00:00:00Z",
-      "precision": "9"
+      "precision": "10"
     },
     "end": {
-      "value": "1992-01-01T00:00:00Z",
-      "precision": "9"
+      "value": "1992-04-01T00:00:00Z",
+      "precision": "10"
     },
     "statement": "Q3741462$cb32a688-43f0-1747-e95d-0659b9f8eb6d"
   },
@@ -78,12 +78,12 @@
       "label": "Priit Vilba"
     },
     "start": {
-      "value": "1992-01-01T00:00:00Z",
-      "precision": "9"
+      "value": "1992-04-01T00:00:00Z",
+      "precision": "10"
     },
     "end": {
-      "value": "1996-01-01T00:00:00Z",
-      "precision": "9"
+      "value": "1996-10-31T00:00:00Z",
+      "precision": "11"
     },
     "statement": "Q1676750$c406e2cf-48a9-c398-11c1-64b459f0fb52"
   },
@@ -124,8 +124,8 @@
       "label": "Ivi Eenmaa"
     },
     "start": {
-      "value": "1996-11-01T00:00:00Z",
-      "precision": "10"
+      "value": "1996-11-14T00:00:00Z",
+      "precision": "11"
     },
     "end": {
       "value": "1997-05-01T00:00:00Z",
@@ -147,37 +147,14 @@
       "label": "Peeter Lepp"
     },
     "start": {
-      "value": "1997-01-01T00:00:00Z",
-      "precision": "9"
+      "value": "1997-05-01T00:00:00Z",
+      "precision": "10"
     },
     "end": {
-      "value": "1999-01-01T00:00:00Z",
-      "precision": "9"
+      "value": "1999-03-01T00:00:00Z",
+      "precision": "10"
     },
     "statement": "Q11023034$9796d389-4037-6507-89e7-ade7eef16e2d"
-  },
-  {
-    "item": {
-      "value": "Q6321970",
-      "label": "Jüri Mõis"
-    },
-    "replaces": {
-      "value": "Q7160478",
-      "label": "Peeter Lepp"
-    },
-    "replacedBy": {
-      "value": "Q743319",
-      "label": "Tõnis Palts"
-    },
-    "start": {
-      "value": "1999-01-01T00:00:00Z",
-      "precision": "9"
-    },
-    "end": {
-      "value": "2001-01-01T00:00:00Z",
-      "precision": "9"
-    },
-    "statement": "Q6321970$8680a1f2-40d5-e4fa-ee76-cd53b26c5fa4"
   },
   {
     "item": {
@@ -201,6 +178,29 @@
       "precision": "10"
     },
     "statement": "Q7160478$77aeba2d-4471-84d4-d1bb-86fec2361327"
+  },
+  {
+    "item": {
+      "value": "Q6321970",
+      "label": "Jüri Mõis"
+    },
+    "replaces": {
+      "value": "Q7160478",
+      "label": "Peeter Lepp"
+    },
+    "replacedBy": {
+      "value": "Q743319",
+      "label": "Tõnis Palts"
+    },
+    "start": {
+      "value": "1999-11-01T00:00:00Z",
+      "precision": "10"
+    },
+    "end": {
+      "value": "2001-06-01T00:00:00Z",
+      "precision": "10"
+    },
+    "statement": "Q6321970$8680a1f2-40d5-e4fa-ee76-cd53b26c5fa4"
   },
   {
     "item": {
@@ -303,13 +303,17 @@
       "value": "Q2621730",
       "label": "Jüri Ratas"
     },
+    "replacedBy": {
+      "value": "Q16403144",
+      "label": "Taavi Aas"
+    },
     "start": {
       "value": "2007-04-09T00:00:00Z",
       "precision": "11"
     },
     "end": {
-      "value": "2015-01-01T00:00:00Z",
-      "precision": "9"
+      "value": "2015-09-01T00:00:00Z",
+      "precision": "10"
     },
     "statement": "Q355241$cae373e3-4155-2efc-1e28-f21dfec17f89"
   },
